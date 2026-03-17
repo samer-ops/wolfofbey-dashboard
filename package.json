@@ -1,0 +1,14 @@
+{
+  "name": "wolfofbey-dashboard",
+  "version": "3.0.0",
+  "description": "Wolfofbey Sales KPI Dashboard - Live data from Close CRM + Teachable",
+  "main": "kpi_dashboard.js",
+  "scripts": {
+    "start": "node kpi_dashboard.js",
+    "this-month": "node kpi_dashboard.js",
+    "last-month": "node kpi_dashboard.js --from $(date -d 'first day of last month' +%Y-%m-%d) --to $(date -d 'last day of last month' +%Y-%m-%d)"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0"
+  }
+}
